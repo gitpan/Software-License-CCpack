@@ -1,0 +1,33 @@
+NAME
+    Software::License::CCpack - Software::License pack for Creative Commons'
+    licenses
+
+VERSION
+    version 1.0
+
+SYNOPSIS
+            my $license = Software::License::CC_BY_3_0->new({
+                    holder => 'Brendan Byrd',
+            });
+
+            say $license->fulltext;
+
+DESCRIPTION
+    This "license pack" contains all of the licenses from Creative Commons,
+    except for CC0, which is already included in Software::License.
+
+    Note that I don't recommend using these licenses for your own CPAN
+    modules. (Most of the licenses aren't even compatible with CPAN.)
+    However, S:L modules are useful for more than mere CPAN::Meta::license
+    declaration, so these modules exist for those other purposes.
+
+AUTHOR
+    Brendan Byrd <BBYRD@CPAN.org>
+
+COPYRIGHT AND LICENSE
+    This software is Copyright (c) 2012 by Brendan Byrd.
+
+    This is free software, licensed under:
+
+      The GNU Lesser General Public License, Version 3, June 2007
+
