@@ -1,4 +1,4 @@
-#!perl
+#!perl -T
 
 BEGIN {
   unless ($ENV{RELEASE_TESTING}) {
@@ -9,7 +9,8 @@ BEGIN {
 
 use Test::More;
 
-eval "use Test::Pod 1.41";
-plan skip_all => "Test::Pod 1.41 required for testing POD" if $@;
+eval "use Test::CheckManifest 1.24";
+plan skip_all => "Test::CheckManifest 1.24 required for testing MANIFEST"
+  if $@;
 
-all_pod_files_ok();
+ok_manifest();

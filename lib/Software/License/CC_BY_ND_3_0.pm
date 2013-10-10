@@ -1,9 +1,6 @@
 use strict;
 use warnings;
 package Software::License::CC_BY_ND_3_0;
-{
-  $Software::License::CC_BY_ND_3_0::VERSION = '1.0';
-}
 use base 'Software::License';
 # ABSTRACT: Creative Commons Attribution-NoDerivs 3.0 Unported License (CC BY-ND 3.0)
 
@@ -15,16 +12,21 @@ sub meta_name  { 'restricted' }
 
 1;
 
-
 =pod
+
+=encoding utf-8
 
 =head1 NAME
 
 Software::License::CC_BY_ND_3_0 - Creative Commons Attribution-NoDerivs 3.0 Unported License (CC BY-ND 3.0)
 
-=head1 VERSION
+=head1 AVAILABILITY
 
-version 1.0
+The project homepage is L<https://github.com/SineSwiper/Software-License-CCpack/wiki>.
+
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see L<https://metacpan.org/module/Software::License::CCpack/>.
 
 =head1 AUTHOR
 
@@ -32,14 +34,13 @@ Brendan Byrd <BBYRD@CPAN.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2012 by Brendan Byrd.
+This software is Copyright (c) 2013 by Brendan Byrd.
 
 This is free software, licensed under:
 
   The GNU Lesser General Public License, Version 3, June 2007
 
 =cut
-
 
 __DATA__
 __NOTICE__
